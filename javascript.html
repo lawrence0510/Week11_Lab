@@ -1,0 +1,30 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Guess the number
+	</title>
+	<script type="text/javascript">
+	while(true){
+		alert("start");
+		var rand = Math.floor((Math.random()*10)+1);
+		number = window.prompt("Please guess the number");
+		while(number != rand){
+			alert('Guess wrong! Please guess again!');
+			number = window.prompt("Please guess the number");
+		}
+		if(number == rand){
+			alert('Correct answer!');
+			document.write('Press Space bar to continue!')
+		}
+	}
+
+
+	</script>
+</head>
+
+<body>
+
+</body>
+</html>
